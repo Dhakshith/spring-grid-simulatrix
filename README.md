@@ -1,2 +1,2 @@
-# spring-grid-simulatrix
+# Spring Grid Simulatrix
 Simulator for spring-coupled systems
