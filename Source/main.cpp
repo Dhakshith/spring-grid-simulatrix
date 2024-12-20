@@ -596,7 +596,7 @@ public:
 			(*globals->labels)[0] = Label(globals->renderer, (*globals->labels)[0].text, translatedCoords(globals, 50, 50), globals->font2, (SDL_Color) {0, 0, 0}, false);
 			placeButtonAndTakeCareOfEverything((*globals->buttons)[0], globals, 10, 50, 100);
 			for (int i = 1; i <= 10; i++)
-				placeButtonAndTakeCareOfEverything((*globals->buttons)[i], globals, 10, 150+i*20, 47);
+				placeButtonAndTakeCareOfEverything((*globals->buttons)[i], globals, 10, 240+i*20, 47);
 		}
 	}
 

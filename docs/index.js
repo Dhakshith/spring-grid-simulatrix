@@ -39,7 +39,7 @@ if (ENVIRONMENT_IS_NODE) {
 
 // --pre-jses are emitted after the Module integration code, so that they can
 // refer to Module (if they choose; they can also define Module)
-// include: /tmp/tmps2xj47pf.js
+// include: /tmp/tmp9o4rnwfl.js
 
   if (!Module['expectedDataFileDownloads']) {
     Module['expectedDataFileDownloads'] = 0;
@@ -60,7 +60,7 @@ if (ENVIRONMENT_IS_NODE) {
         // web worker
         PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
       }
-      var PACKAGE_NAME = 'Site/index.data';
+      var PACKAGE_NAME = '../docs/index.data';
       var REMOTE_PACKAGE_BASE = 'index.data';
       if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
         Module['locateFile'] = Module['locateFilePackage'];
@@ -200,10 +200,10 @@ Module['FS_createPath']("/Resources", "licenses", true, true);
           var files = metadata['files'];
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
-          }          Module['removeRunDependency']('datafile_Site/index.data');
+          }          Module['removeRunDependency']('datafile_../docs/index.data');
 
       };
-      Module['addRunDependency']('datafile_Site/index.data');
+      Module['addRunDependency']('datafile_../docs/index.data');
 
       if (!Module['preloadResults']) Module['preloadResults'] = {};
 
@@ -228,21 +228,21 @@ Module['FS_createPath']("/Resources", "licenses", true, true);
 
   })();
 
-// end include: /tmp/tmps2xj47pf.js
-// include: /tmp/tmp0abilzs9.js
+// end include: /tmp/tmp9o4rnwfl.js
+// include: /tmp/tmpw60zubg6.js
 
     // All the pre-js content up to here must remain later on, we need to run
     // it.
     if (Module['$ww'] || (typeof ENVIRONMENT_IS_PTHREAD != 'undefined' && ENVIRONMENT_IS_PTHREAD)) Module['preRun'] = [];
     var necessaryPreJSTasks = Module['preRun'].slice();
-  // end include: /tmp/tmp0abilzs9.js
-// include: /tmp/tmp4sf5zn2n.js
+  // end include: /tmp/tmpw60zubg6.js
+// include: /tmp/tmpi85n6gyy.js
 
     if (!Module['preRun']) throw 'Module.preRun should exist because file support used it; did a pre-js delete it?';
     necessaryPreJSTasks.forEach((task) => {
       if (Module['preRun'].indexOf(task) < 0) throw 'All preRun tasks that exist before user pre-js code should remain after; did you replace Module or modify Module.preRun?';
     });
-  // end include: /tmp/tmp4sf5zn2n.js
+  // end include: /tmp/tmpi85n6gyy.js
 
 
 // Sometimes an existing Module object exists with properties
